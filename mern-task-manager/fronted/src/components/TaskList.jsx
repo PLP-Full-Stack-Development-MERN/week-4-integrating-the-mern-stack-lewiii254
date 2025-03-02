@@ -10,7 +10,7 @@ const TaskList = () => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/tasks');
+        const res = await axios.get('https://task-manager-backend.onrender.com/api/tasks');
         setTasks(Array.isArray(res.data) ? res.data : []);
       } catch (err) {
         setError('Failed to fetch tasks');

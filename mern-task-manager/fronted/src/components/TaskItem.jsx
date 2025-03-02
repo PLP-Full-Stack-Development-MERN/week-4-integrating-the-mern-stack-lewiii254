@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const TaskItem = ({ task, setTasks }) => {
   const deleteTask = async () => {
-    await axios.delete(`http://localhost:5000/api/tasks/${task._id}`);
+    await axios.delete(`https://task-manager-backend.onrender.com/api/tasks/${task._id}`);
     setTasks(prev => prev.filter(t => t._id !== task._id));
   };
 

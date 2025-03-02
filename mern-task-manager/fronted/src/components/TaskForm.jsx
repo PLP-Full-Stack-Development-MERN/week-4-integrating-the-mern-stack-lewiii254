@@ -10,7 +10,7 @@ const TaskForm = () => {
   useEffect(() => {
     if (id) {
       const fetchTask = async () => {
-        const res = await axios.get(`http://localhost:5000/api/tasks/${id}`);
+        const res = await axios.get(`https://task-manager-backend.onrender.com/api/tasks/${id}`);
         setTask(res.data);
       };
       fetchTask();
@@ -20,9 +20,9 @@ const TaskForm = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     if (id) {
-      await axios.put(`http://localhost:5000/api/tasks/${id}`, task);
+      await axios.put(`https://task-manager-backend.onrender.com/api/tasks/${id}`, task);
     } else {
-      await axios.post('http://localhost:5000/api/tasks', task);
+      await axios.post('https://task-manager-backend.onrender.com/api/tasks', task);
     }
     navigate('/');
   };
