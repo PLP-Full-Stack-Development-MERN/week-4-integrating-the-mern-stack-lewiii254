@@ -1,7 +1,7 @@
 # MERN Task Manager
 
 ## Deployment
-- **Backend:** [https://task-manager-backend.onrender.com](https://task-manager-backend.onrender.com)
+- **Backend:** [https://week-4-integrating-the-mern-stack.onrender.com/api/tasks](https://week-4-integrating-the-mern-stack.onrender.com/api/tasks)
 - **Frontend:** [https://week-4-integrating-the-mern-stack-lewiii254.vercel.app](https://week-4-integrating-the-mern-stack-lewiii254.vercel.app)
 - **Database:** MongoDB Atlas
 
